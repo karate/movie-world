@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    user: "1000:1000"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: movieworld
+    env_file:
+      - .env
+    environment:
+      - DB_CONNECTION=sqlite
+      - DB_DATABASE=/app/database/database.sqlite
+      - SESSION_DRIVER=database
+      - SESSION_CONNECTION=sqlite
+    volumes:
+      - ./code:/app
+    ports:
+      - "8000:8000"
