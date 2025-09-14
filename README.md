@@ -43,3 +43,26 @@ The minimum requirements are:
 - Users should not be able to vote for the movies they have submitted.
 - Users should be able to view the list of movies and sort them by number of
 likes, number of hates or date added.
+
+## Installation
+1. Clone the repository
+    ```bash
+    git clone https://github.com/karate/movie-world.git
+    cd movie-world
+    ```
+2. Copy the example environment file and modify the necessary environment variables
+    ```bash
+    cp .env.example .env
+    ```
+3. Build the docker containers
+    ```bash
+    docker-compose up -d --build
+    ```
+4. Install the dependencies
+    ```bash
+    docker-compose exec app composer install
+    docker-compose exec app npm install
+    ```
+5. View the application
+    Open your browser and navigate to `http://localhost:8000`
+
