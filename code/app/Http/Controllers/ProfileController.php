@@ -87,6 +87,6 @@ class ProfileController extends Controller
         ]);
         $movie->description = $validated['description'];
         $movie->save();
-        return redirect()->route('profile.movies')->with('success', 'Movie description updated!');
+        return redirect()->route('home')->with('success', 'Movie description updated!');
     }
 }
