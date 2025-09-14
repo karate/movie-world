@@ -52,7 +52,7 @@ likes, number of hates or date added.
     ```
 2. Copy the example environment file and modify the necessary environment variables
     ```bash
-    cp .env.example .env
+    cp code/.env.example code/.env
     ```
 3. Build the docker containers
     ```bash
