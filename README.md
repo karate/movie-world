@@ -58,6 +58,5 @@ likes, number of hates or date added.
     ```bash
     docker-compose up -d --build
     ```
-4. View the application
-    Open your browser and navigate to `http://localhost:8000`
+4. View the application in your browser at `http://localhost:8000`
 
