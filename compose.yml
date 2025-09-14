@@ -18,3 +18,4 @@ services:
       - ./code:/app
     ports:
       - "8000:8000"
+    command: sh -c "composer install; npm install; php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8000 --no-reload"
