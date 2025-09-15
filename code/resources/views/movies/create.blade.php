@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mx-auto py-8">
-    <h1 class="text-2xl font-bold mb-6">Add a New Movie</h1>
+<div class="max-w-6xl mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-2 text-left">Add a New Movie</h1>
     <form method="POST" action="{{ route('movies.store') }}" class="max-w-lg mx-auto bg-white p-6 rounded shadow">
         @csrf
         <div class="mb-4">
