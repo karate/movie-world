@@ -24,9 +24,9 @@
                     <p class="mb-2 text-gray-700">{{ $movie->description }}</p>
                     <div class="flex items-center justify-between text-sm text-gray-500">
                         <div class="flex items-center gap-2">
-                            <span id="likes-count-{{ $movie->id }}">{{ $movie->likes_count ?? 0 }} likes</span>
+                            <span class="text-green-800" id="likes-count-{{ $movie->id }}">{{ $movie->likes_count ?? 0 }} likes</span>
                             <span>|</span>
-                            <span id="hates-count-{{ $movie->id }}">{{ $movie->hates_count ?? 0 }} hates</span>
+                            <span class="text-red-600" id="hates-count-{{ $movie->id }}">{{ $movie->hates_count ?? 0 }} hates</span>
                         </div>
                         @auth
                         @if($movie->user_id !== auth()->id())
